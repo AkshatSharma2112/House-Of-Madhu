@@ -1,0 +1,240 @@
+/* ===== SUPPORT PAGE ===== */
+.support-page {
+  padding: 60px 0 80px;
+  background: #FAF0E6;
+  min-height: 80vh;
+}
+
+/* ===== HEADER ===== */
+.support-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.support-title {
+  font-size: 2.5rem;
+  color: #4A3525;
+  margin-bottom: 8px;
+  font-family: 'Georgia', serif;
+}
+
+.support-subtitle {
+  font-size: 1.1rem;
+  color: #8B7355;
+  font-style: italic;
+}
+
+/* ===== QUICK NAVIGATION ===== */
+.support-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #E8DDD0;
+}
+
+.support-nav-link {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #FFF9F2;
+  color: #4A3525;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 2px solid #E8DDD0;
+  font-family: 'Georgia', serif;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.support-nav-link:hover {
+  background: #C4A88A;
+  border-color: #C4A88A;
+  color: #FFF9F2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(196, 168, 138, 0.3);
+}
+
+/* ===== SECTIONS ===== */
+.support-section {
+  background: #FFF9F2;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 40px;
+  border: 1px solid #E8DDD0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  scroll-margin-top: 100px;
+}
+
+.support-section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+  border-bottom: 2px solid #E8DDD0;
+}
+
+.support-icon {
+  font-size: 2.4rem;
+}
+
+.support-section h2 {
+  font-size: 1.8rem;
+  color: #4A3525;
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+/* ===== CONTENT ===== */
+.support-content h3 {
+  font-size: 1.2rem;
+  color: #6B4F3C;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+}
+
+.support-content h3:first-child {
+  margin-top: 0;
+}
+
+.support-content p {
+  font-size: 1rem;
+  color: #5C4535;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.support-content strong {
+  color: #4A3525;
+}
+
+.support-updated {
+  color: #B8A08E !important;
+  font-size: 0.9rem !important;
+  margin-bottom: 24px !important;
+}
+
+/* ===== LISTS ===== */
+.support-list {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.support-list li {
+  color: #5C4535;
+  line-height: 1.8;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.support-list.numbered {
+  list-style: decimal;
+}
+
+/* ===== TABLE ===== */
+.support-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #E8DDD0;
+}
+
+.support-table thead {
+  background: #F5E6D3;
+}
+
+.support-table th {
+  padding: 14px 16px;
+  text-align: left;
+  color: #4A3525;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  font-size: 0.95rem;
+}
+
+.support-table td {
+  padding: 14px 16px;
+  color: #5C4535;
+  border-top: 1px solid #E8DDD0;
+  font-size: 0.95rem;
+}
+
+.support-table tbody tr:hover {
+  background: #FAF0E6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .support-page {
+    padding: 40px 0 60px;
+  }
+
+  .support-title {
+    font-size: 2rem;
+  }
+
+  .support-section {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+
+  .support-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .support-icon {
+    font-size: 1.8rem;
+  }
+
+  .support-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .support-table {
+    font-size: 0.85rem;
+  }
+
+  .support-table th,
+  .support-table td {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .support-title {
+    font-size: 1.6rem;
+  }
+
+  .support-nav {
+    gap: 10px;
+  }
+
+  .support-nav-link {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .support-section {
+    padding: 24px 16px;
+  }
+
+  .support-section-header {
+    gap: 12px;
+  }
+
+  .support-section h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Make table horizontally scrollable on mobile */
+  .support-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

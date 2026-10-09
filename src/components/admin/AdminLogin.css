@@ -1,0 +1,140 @@
+.admin-login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeInOverlay 0.3s ease;
+}
+
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.admin-login-modal {
+  background: #FFF9F2;
+  padding: 48px 40px 36px;
+  border-radius: 24px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.admin-login-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.admin-login-modal h2 {
+  font-size: 1.8rem;
+  color: #6B4F3C;
+  margin-bottom: 6px;
+  font-family: 'Georgia', serif;
+}
+
+.admin-login-modal p {
+  color: #8B7355;
+  margin-bottom: 28px;
+  font-size: 0.95rem;
+}
+
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.admin-login-form input {
+  padding: 14px 18px;
+  border: 2px solid #E8DDD0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  background: #FAF0E6;
+  color: #6B4F3C;
+  transition: border 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admin-login-form input:focus {
+  outline: none;
+  border-color: #C4A88A;
+}
+
+.admin-login-form input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-login-error {
+  color: #E74C3C;
+  font-size: 0.9rem;
+  padding: 10px 14px;
+  background: #FDE8E8;
+  border-radius: 10px;
+  border: 1px solid #F5C6C6;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-login-footer {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #E8DDD0;
+}
+
+.back-to-site {
+  color: #8B7355;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.back-to-site:hover {
+  color: #C4A88A;
+}
+
+@media (max-width: 480px) {
+  .admin-login-modal {
+    padding: 32px 24px 28px;
+  }
+  .admin-login-modal h2 {
+    font-size: 1.5rem;
+  }
+}

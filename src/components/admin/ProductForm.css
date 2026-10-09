@@ -1,0 +1,214 @@
+.product-form {
+  padding: 4px 0;
+}
+
+.product-form h3 {
+  font-size: 1.6rem;
+  color: #6B4F3C;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.product-form .form-group {
+  margin-bottom: 18px;
+}
+
+.product-form .form-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #6B4F3C;
+}
+
+.product-form .form-group input,
+.product-form .form-group select,
+.product-form .form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #E8DDD0;
+  border-radius: 12px;
+  background: #FFF9F2;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+  color: #6B4F3C;
+}
+
+.product-form .form-group input:focus,
+.product-form .form-group select:focus,
+.product-form .form-group textarea:focus {
+  outline: none;
+  border-color: #C4A88A;
+}
+
+.product-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.tag-input {
+  display: flex;
+  gap: 10px;
+}
+
+.tag-input select {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #E8DDD0;
+  border-radius: 12px;
+  background: #FFF9F2;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  color: #6B4F3C;
+}
+
+.tag-input select:focus {
+  outline: none;
+  border-color: #C4A88A;
+}
+
+.btn-add-tag {
+  padding: 10px 20px;
+  background: #C4A88A;
+  color: #FFF9F2;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-add-tag:hover {
+  background: #B08B6E;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px 4px 8px;
+  background: #F5E6D3;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #6B4F3C;
+  border: 1px solid #D4C4B7;
+}
+
+.color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #D4C4B7;
+  flex-shrink: 0;
+}
+
+.tag-remove {
+  background: none;
+  border: none;
+  color: #8B7355;
+  cursor: pointer;
+  padding: 0 2px;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.tag-remove:hover {
+  color: #E74C3C;
+}
+
+.form-checkboxes {
+  display: flex;
+  gap: 24px;
+  margin: 16px 0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #6B4F3C;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #C4A88A;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-end;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #E8DDD0;
+}
+
+.form-actions .btn-primary,
+.form-actions .btn-outline {
+  padding: 10px 32px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .product-form .form-row {
+    grid-template-columns: 1fr;
+  }
+  .form-checkboxes {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form-actions {
+    flex-direction: column;
+  }
+  .form-actions .btn-primary,
+  .form-actions .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+  /* ===== CUSTOM COLOR INPUT ===== */
+.custom-color-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.custom-color-input input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #E8DDD0;
+  border-radius: 12px;
+  background: #FFF9F2;
+  font-family: 'Georgia', serif;
+  font-size: 0.95rem;
+  color: #4A3525;
+  transition: border 0.3s ease;
+}
+
+.custom-color-input input:focus {
+  outline: none;
+  border-color: #C4A88A;
+}
+
+.custom-color-input input::placeholder {
+  color: #B8A08E;
+  font-style: italic;
+}
+
+.custom-color-input .btn-add-tag {
+  white-space: nowrap;
+}
