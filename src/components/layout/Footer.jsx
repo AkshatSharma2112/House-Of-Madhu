@@ -10,7 +10,7 @@ const Footer = () => {
 
   // ⚠️ CHANGE THIS to your actual Instagram username
   const INSTAGRAM_USERNAME = 'houseofmadhu'; // ← Replace with your Instagram handle
-  const instagramUrl = `https://instagram.com/${INSTAGRAM_USERNAME}`;
+  const instagramUrl = `https://www.instagram.com/house._.of._.madhu/`;
 
   // Open the existing Madhu chatbot
   const handleFAQClick = (e) => {
